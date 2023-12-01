@@ -1,0 +1,5 @@
+node_modules/
+key.json
+.env
+package-lock.json
+new_model.h5
