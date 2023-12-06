@@ -1,5 +1,6 @@
 node_modules/
 key.json
-.env
+src/config.js
 package-lock.json
 new_model.h5
+build

@@ -43,10 +43,10 @@ const CreateFeed = () => {
     const predictions = await model.predict(tensor).data();
     console.log(predictions);
     // Check if the image is predicted as mild or severe disaster
-    const isMildOrSevereDisaster =
     const maxIndex = predictions.indexOf(Math.max(...predictions));
-    const isMildOrSevereDisaster = maxIndex === 0 || maxIndex === 1;
-
+    console.log(maxIndex);
+    const isMildOrSevereDisaster = maxIndex === 1 || maxIndex === 2;
+    console.log(isMildOrSevereDisaster);
     return isMildOrSevereDisaster;
   };
 
