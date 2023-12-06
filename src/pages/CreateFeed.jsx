@@ -15,7 +15,7 @@ const CreateFeed = () => {
   useEffect(() => {
     const loadModel = async () => {
       const loadedModel = await tf.loadLayersModel(
-        "http://127.0.0.1:5500/src/disasterlevel/model.json"
+        "https://crisys-eight.vercel.app/disasterlevel/model.json"
       );
       setModel(loadedModel);
     };

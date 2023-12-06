@@ -14,7 +14,7 @@ const Navbar = () => {
     return (
         <>
             <nav className="relative flex justify-between items-center w-full h-16 bg-blue-500 px-5 py-3 text-white z-10">
-                <Link to="/" className='md:text-2xl text-xl font-semibold'>Hack X</Link>
+                <Link to="/" className='md:text-2xl text-xl font-semibold'>CriSys</Link>
 
                 <button className="block md:hidden text-2xl" onClick={e => setOpenNav(!openNav)}>
                     {
