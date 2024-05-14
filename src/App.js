@@ -9,7 +9,8 @@ import Profile from './pages/Profile';
 import Communities from './pages/Communities';
 import { AuthContext } from './context/AuthContext';
 import LogOutNav from './components/LogOutNav';
-
+import Admin from './Admin';
+import AboutUs from './components/AboutUs';
 
 const App = () => {
 
@@ -22,6 +23,10 @@ const App = () => {
 
     return children;
   };
+  const isAdminRoute = () => {
+    return window.location.pathname.startsWith('/admin');
+};
+
 
   return (
 
@@ -32,6 +37,8 @@ const App = () => {
         <Route path='/signup' element={<Signup />} />
         <Route path='/login' element={<Login />} />
         <Route path='/' element={<Home />} />
+        <Route path='/admin/*' element={<Admin />} />
+        <Route path='/aboutUs' element={<AboutUs />} />
 
         <Route path='/create-feed' element={<ProtectedRoute><CreateFeed /></ProtectedRoute>} />
         <Route path='/profile' element={<ProtectedRoute><Profile /></ProtectedRoute>} />

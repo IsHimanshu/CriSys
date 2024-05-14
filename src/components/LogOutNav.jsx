@@ -5,7 +5,7 @@ const LogOutNav = () => {
     return (
         <>
             <nav className="relative flex justify-between items-center w-full h-16 bg-transparent px-5 py-3 text-white z-10">
-                <Link to="/" className='md:text-2xl text-xl text-blue-600 font-semibold'>Hack X</Link>
+                <Link to="/" className='md:text-2xl text-xl text-blue-600 font-semibold'>CriSys</Link>
 
 
                 <div className='flex items-center gap-5 md:gap-7'>

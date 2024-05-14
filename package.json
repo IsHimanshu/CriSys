@@ -5,10 +5,12 @@
   "dependencies": {
     "@headlessui/react": "^1.7.14",
     "@heroicons/react": "^2.0.17",
+    "@react-google-maps/api": "^2.19.3",
     "@tensorflow/tfjs": "^4.5.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.8",
     "child_process": "^1.0.2",
     "child-process": "^1.0.2",
     "country-state-city": "^3.1.4",

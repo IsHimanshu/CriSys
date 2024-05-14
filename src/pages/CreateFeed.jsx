@@ -44,7 +44,7 @@ const CreateFeed = () => {
     console.log(predictions);
     // Check if the image is predicted as mild or severe disaster
     const maxIndex = predictions.indexOf(Math.max(...predictions));
-    const isMildOrSevereDisaster ( maxIndex!==0);
+    const isMildOrSevereDisaster=(maxIndex!==0);
     console.log(isMildOrSevereDisaster);
     return isMildOrSevereDisaster;
   };
